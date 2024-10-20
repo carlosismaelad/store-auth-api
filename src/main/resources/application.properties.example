@@ -1,0 +1,17 @@
+# Configurações do Banco de Dados PostgreSQL
+spring.datasource.url=jdbc:postgresql://<HOST>:<PORT>/<DATABASE_NAME>
+spring.datasource.username=<DB_USERNAME>
+spring.datasource.password=<DB_PASSWORD>
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+# Secret key
+api.security.token.secret=<YOUR_SECRET_HERE>
+
+# Propriedades do Hibernate (JPA)
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.hibernate.ddl-auto=none
+spring.jpa.show-sql=true
+
+# Configurações do Flyway
+spring.flyway.enabled=true
+spring.flyway.locations=classpath:db/migration
